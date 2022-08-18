@@ -44,20 +44,20 @@ export default class AudioPlayer {
     //       renderFrame();
     // }
 
-    createPlayerElements() {
-        this.audioElem = document.createElement('audio');
-        const playListElem = document.createElement('div');
-        playListElem.classList.add('playlist');
-        const playElem = document.createElement('button');
-        playElem.classList.add('play');
-        playElem.innerHTML = '<i class="fa fa-play"></i>';
-        this.visualiserElem = document.createElement('canvas');
-        this.playerElem.appendChild(this.audioElem);
-        this.playerElem.appendChild(playListElem);
-        this.playerElem.appendChild(this.visualiserElem);
+    // createPlayerElements() {
+    //     this.audioElem = document.createElement('audio');
+    //     const playListElem = document.createElement('div');
+    //     playListElem.classList.add('playlist');
+    //     const playElem = document.createElement('button');
+    //     playElem.classList.add('play');
+    //     playElem.innerHTML = '<i class="fa fa-play"></i>';
+    //     this.visualiserElem = document.createElement('canvas');
+    //     this.playerElem.appendChild(this.audioElem);
+    //     this.playerElem.appendChild(playListElem);
+    //     this.playerElem.appendChild(this.visualiserElem);
 
-        this.createPlayListElements(playListElem);
-    }
+    //     this.createPlayListElements(playListElem);
+    // }
 
     createPlayListElements(playListElem) {
         this.audio.forEach(audio => {
